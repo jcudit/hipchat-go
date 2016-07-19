@@ -493,6 +493,10 @@ type HistoryOptions struct {
 	// values, whereas date queries may not include the most recent messages.
 	Date string `url:"date,omitempty"`
 
+	// Either the earliest ate to fetch history for the ISO-8601 format,
+	// or 'null' to disable this filter.
+	EndDate string `url:"end-date,omitempty"`
+
 	// Your timezone. Must be a supported timezone
 	Timezone string `url:"timezone,omitempty"`
 
